@@ -1,0 +1,9 @@
+Building Orexcoin
+
+See doc/readme-qt.rst for instructions on building Orexcoin-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Orexcoin.
+
+See doc/build-*.txt for instructions on building orexcoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of Orexcoin.

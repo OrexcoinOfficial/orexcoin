@@ -1,0 +1,22 @@
+FROM debian:wheezy
+
+#Default branch name develop
+ARG BRANCH_NAME=develop
+#Default
+ARG REPO_SLUG=orexcoin/orexcoin
+ENV REPO_SLUG=${REPO_SLUG}
+ENV REPO_URL=https://github.com/${REPO_SLUG}
+
+RUN apt-get -qq update && \
+    apt-get -qqy install \
+    git \
+    sudo
+
+#RUN git clone ${REPO_URL} --branch $BRANCH_NAME --single-branch --depth 1
+
+COPY orexcoin.tar.gz /orexcoin.tar.gz
+RUN tar -xvf /orexcoin.tar.gz
+
+#ADD . /orexcoin
+RUN cd /orexcoin/scripts/windows-crosscompile && ./dependencies.sh
+RUN cd /orexcoin && scripts/windows-crosscompile/compile-orexcoin.sh

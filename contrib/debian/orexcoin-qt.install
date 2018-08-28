@@ -1,0 +1,7 @@
+usr/local/bin/orexcoin-qt usr/bin
+share/pixmaps/orexcoin16.png usr/share/pixmaps
+share/pixmaps/orexcoin32.png usr/share/pixmaps
+share/pixmaps/orexcoin128.png usr/share/pixmaps
+share/pixmaps/orexcoin256.png usr/share/pixmaps
+debian/orexcoin-qt.desktop usr/share/applications
+debian/orexcoin-qt.protocol usr/share/kde4/services/

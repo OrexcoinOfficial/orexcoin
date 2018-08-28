@@ -1,0 +1,52 @@
+Source: orexcoin
+Section: utils
+Priority: optional
+Maintainer: Peerchemist <peerchemist@protonmail.ch>
+Uploaders: Peerchemist <peerchemist@protonmail.ch>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ pkg-config,
+ bash-completion,
+ libdb-dev,
+ libdb++-dev,
+ libssl-dev,
+ perl,
+ perl-modules,
+ libevent-dev,
+ python,
+ libboost-system1.54-dev | libboost-system-dev (>> 1.47),
+ libboost-filesystem1.54-dev | libboost-filesystem-dev (>> 1.47),
+ libboost-program-options1.54-dev | libboost-program-options-dev (>> 1.47),
+ libboost-thread1.54-dev | libboost-thread-dev (>> 1.47),
+ libboost-test1.54-dev | libboost-test-dev (>> 1.47),
+ libboost-program-options1.54-dev | libboost-program-options-dev,
+ libminiupnpc8-dev | libminiupnpc-dev,
+ qtbase5-dev,
+ qttools5-dev-tools, qttools5-dev,
+ libqrencode-dev
+Standards-Version: 3.9.5
+Homepage: https://orexcoin.net/
+Vcs-Git: git://github.com/orexcoin/orexcoin.git
+Vcs-Browser: https://github.com/orexcoin/orexcoin
+
+Package: orexcoind
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Orexcoin is a crypto-currency project forked from Bitcoin with aim to achieve
+ energy-efficiency and keep as much as possible the original Bitcoin's
+ preferable properties.
+ .
+ This package provides orexcoind, a daemon client for the Orexcoin network.
+
+Package: orexcoin-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Orexcoin is a crypto-currency project forked from Bitcoin with aim to achieve
+ energy-efficiency and keep as much as possible the original Bitcoin's
+ preferable properties.
+ .
+ This package provides Orexcoin-Qt, a GUI client for Orexcoin based on Qt.
