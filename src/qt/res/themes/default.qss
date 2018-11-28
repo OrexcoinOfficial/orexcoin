@@ -114,7 +114,7 @@ QComboBox::drop-down{
 */
 QTableView {
     show-decoration-selected: 1;
-    background: #4b4d5b;
+    background: #e5e6ea;
     alternate-background-color: #373946;
     color: #211f20;
     gridline-color: #211f20;

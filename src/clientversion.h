@@ -23,7 +23,7 @@
 #define OREXCOIN_VERSION_MAJOR       0
 #define OREXCOIN_VERSION_MINOR       6
 #define OREXCOIN_VERSION_REVISION    3
-#define OREXCOIN_VERSION_BUILD       0
+#define OREXCOIN_VERSION_BUILD       1
 
 // Copyright year (2009-this)
 // Todo: update this when changing our copyright comments in the source
